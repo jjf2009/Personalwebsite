@@ -1,53 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Add icon library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="Personal.css">
-<title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="1.png" class="img rounded-circle img-fluid img-responsive">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/Personal.css">
+    <!-- Title -->
+    <title>Jared Furtado</title>
 </head>
 <body>
-<header>
-<nav id="navbar">
-    <ul>
-    <li><a href="#welcome-section" class="nav-link">About</a></li>
-    <li><a href="#project" class="nav-link">Work</a></li>
-    <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
-</nav>
-</header>
-<section id="welcome-section">
-        <h1>Hi I am Jared <span>a developer</span> </h1> 
-</section>
-<section id="project">
-    <h2>These are some of my projects</h2>
-    <div class="project-tile"><h3>Project Title</h3>
-        <p>Short description of the project.</p>
-        <a href="link-to-project" target="_blank">View Project</a></div>
-    <div class="project-tile"><h3>Project Title</h3>
-        <p>Short description of the project.</p>
-        <a href="link-to-project" target="_blank">View Project</a></div>
-    <div class="project-tile"><h3>Project Title</h3>
-        <p>Short description of the project.</p>
-        <a href="link-to-project" target="_blank">View Project</a></div>
-    <div class="project-tile"><h3>Project Title</h3>
-        <p>Short description of the project.</p>
-        <a href="link-to-project" target="_blank">View Project</a></div>
-    <div class="project-tile"><h3>Project Title</h3>
-        <p>Short description of the project.</p>
-        <a href="link-to-project" target="_blank">View Project</a></div>
-</section>
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/jared-john-furtado-535426315/" target="_blank">LinkedIn Profile</a></p>
-    <p>GitHub: <a id="profile-link" href="https://github.com/JJF2014" target="_blank">GitHub Profile</a></p>
-    <p>X:<a class="profile-link" href="https://x.com/JF2009_official" target="_blank">X Profile</a></p>
-</section>
-<footer>
-    <p>&copy; 2024 Jared John Furtado. All rights reserved.</p>
-</footer>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="1.png" class="img rounded-circle img-fluid img-responsive" style="width: 5rem;" alt="Logo">
+                <span class="fw-bold">Jared Furtado</span>
+            </a>
+            <!-- Toggle button for mobile nav -->
+            <button class="navbar-toggler custom" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Nav-link -->
+            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                <ul class="navbar-nav color-gray">
+                    <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#Exp" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item d-md-none text-white"><a href="#Resume" class="nav-link">Resume</a></li>
+                    <li class="nav-item ms-2 d-none d-md-inline rounded-2"><a href="#Resume" class="btn btn-secondary">Download Resume</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="bg-light mt-5" id="Home">
+        <div class="container-lg">
+            <div class="text-center">
+                <img src="Boss.png" alt="Jared's Image" class="img rounded-circle img-fluid img-responsive mt-5 pt-5" style="width: 18rem;">
+                <h2>Hi, Jared Here</h2>
+                <p class="lead text-muted">I'm a <span id="demo"></span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="About" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>About</h2>
+                <p class="lead text-muted">
+                    Hey! I'm <b>Jared Furtado</b>, a student at Goa College of Engineering and a passionate developer. I’m learning the MERN stack and cloud computing, and I'm always exploring new technologies. As a freelancer, I've tackled diverse projects, building dynamic web apps and sleek user interfaces. I dream of starting my own tech startup one day, blending my love for coding with my entrepreneurial spirit. Goa's vibrant culture fuels my creativity and ambition. Let's connect and create something amazing together! 🚀
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="Exp" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Experience</h2>
+                <div class="card">
+                    <div class="card-body">
+                        No <b>Experience</b> at present, would love to work with you!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="Projects" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Projects</h2>
+                <p class="lead text-muted">Explore my projects, where I've brought ideas to life using the MERN stack, cloud computing, and more. Each project showcases my passion for development and problem-solving.</p>
+            </div>
+        </div>
+        <div class="row my-5 align-items-center justify-content-center g-3">
+            <div class="col-lg-4 col-xl-3" style="width: 18rem;">
+                <div class="card border-2 border-primary">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Project:1</h4>
+                        <p class="lead subtitle">Tribute Page</p>
+                        <img src="Project1.jpg" class="card-img-top" alt="Tribute Page">
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Made using basic HTML and CSS</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Visit</a>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-3" style="width: 18rem;">
+                <div class="card border-2 border-primary">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Project:2</h4>
+                        <p class="lead subtitle">Palindrome Checker</p>
+                        <img src="Project2.jpg" class="card-img-top" alt="Form">
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Made Using Javascript</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Visit</a>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-3" style="width: 18rem;">
+                <div class="card border-2 border-primary">
+                    <div class="card-body text-center py-4">
+                        <h4 class="card-title">Project:3</h4>
+                        <p class="lead subtitle">Roman Numeral Converter</p>
+                        <img src="Project3.jpg" class="card-img-top" alt="Number" style="width: 15rem;">
+                        <p class="card-text mx-5 text-muted d-none d-lg-block">Made Usign Javascript</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Visit</a>
+                        <a href="#" class="btn btn-outline-primary btn-lg mt-3">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="Contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Contact</h2>
+                <!-- Add contact information here -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        var i = 0;
+        var j = 0;
+        var txt = ['Developer 💻', 'Freelancer 🌟', 'Innovator 🚀', 'MERN Stack Enthusiast ⚛️', 'Cloud Explorer ☁️', 'Tech Lover 💡', 'Future Entrepreneur 💼', 'Goa-Based 🌴', 'Problem Solver 🔧', 'Startup Dreamer 🌟']; 
+        var speed = 100; // Speed for typing effect
+
+        function typeWriter() {
+            if (i < txt[j].length) {
+                document.getElementById("demo").innerHTML += txt[j].charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            } else {
+                setTimeout(eraseText, 1000); // Delay before erasing text
+            }
+        }
+
+        function eraseText() {
+            if (i >= 0) {
+                var currentText = txt[j].substring(0, i);
+                document.getElementById("demo").innerHTML = currentText;
+                i--;
+                setTimeout(eraseText, speed);
+            } else {
+                j = (j + 1) % txt.length; // Move to the next text in array
+                setTimeout(typeWriter, 100); // Delay before typing next text
+            }
+        }
+
+        // Initialize typing effect
+        setTimeout(typeWriter, 100);
+    </script>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
