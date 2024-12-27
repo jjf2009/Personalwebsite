@@ -3,177 +3,224 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="Jared Furtado - Full Stack Developer Portfolio">
+    <meta name="keywords" content="MERN stack, developer, portfolio, Goa, web development">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="./Personal_images/Personal_logo.jpg" type="image/png">
+    <!-- Font Awesome and Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="icon" href="1.png" class="img rounded-circle img-fluid img-responsive">
-    <!-- Bootstrap CSS -->
+     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/Personal.css">
-    <!-- Title -->
-    <title>Jared Furtado</title>
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Local Css File -->
+    <link rel="stylesheet" href="index.css">
+
+    <title>Jared Furtado | Full Stack Developer</title>
+  
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
-        <div class="container-fluid">
-            <a href="https://github.com/jjf2009/jjf2009.github.io" class="navbar-brand">
-                <img src="J.png" class="img rounded-circle img-fluid img-responsive" style="width: 5rem;" alt="Logo">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./Personal_images/Personal_logo.jpg" alt="Logo" class="me-2" style="width: 70px">
                 <span class="fw-bold">Jared Furtado</span>
             </a>
-            <!-- Toggle button for mobile nav -->
-            <button class="navbar-toggler custom" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <!-- Nav-link -->
-            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-                <ul class="navbar-nav color-gray">
-                    <li class="nav-item"><a href="#Home" class="nav-link">Home</a></li>
-                    <li class="nav-item"><a href="#About" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#Exp" class="nav-link">Experience</a></li>
-                    <li class="nav-item"><a href="#Projects" class="nav-link">Projects</a></li>
-                    <li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
-                    <li class="nav-item d-md-none text-white"><a href="#Resume" class="nav-link">Resume</a></li>
-                    <li class="nav-item ms-2 d-none d-md-inline rounded-2"><a href="#Resume" class="btn btn-secondary">Download Resume</a></li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <!-- <li class="nav-item ms-lg-3">
+                        <a class="btn ">
+                            <i class="fas fa-sun icon"></i>
+                        </a>
+                    </li> -->
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary rounded-pill px-4" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" download="01_Jared_Furtado_Resume">Download My CV</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Home -->
-    <section class="bg-light mt-5" id="Home">
-        <div class="container-lg">
-            <div class="text-center">
-                <img src="Boss.png" alt="Jared's Image" class="img rounded-circle img-fluid img-responsive mt-5 pt-5" style="width: 18rem;">
-                <h2>Hi, Jared Here</h2>
-                <p class="lead text-muted">I'm a <span id="demo"></span></p>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-3">Hi, I'm Jared Furtado</h1>
+                    <h2 class="h3 mb-4">I'm a <span id="typed-text"></span></h2>
+                    <p class="lead mb-4">Building innovative web solutions with modern technologies</p>
+                    <div class="d-flex gap-3">
+                        <a href="#projects" class="btn btn-primary btn-lg rounded-pill">View My Work</a>
+                        <a href="mailto:jaredfurtadowork@gmail.com" class="btn btn-outline-primary btn-lg rounded-pill">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="./Personal_images/Profile_image.png" alt="Jared's Profile" class="img-fluid rounded-circle mx-auto d-block" style="max-width: 400px">
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- About -->
-    <section id="About" class="bg-light mt-5">
-        <div class="container-lg">
-            <div class="text-center">
-                <h2>About</h2>
-                <p class="lead text-muted">
-                    Hey! I'm <b>Jared Furtado</b>, a student at Goa College of Engineering and a passionate developer. I’m learning the MERN stack and cloud computing, and I'm always exploring new technologies. As a freelancer, I've tackled diverse projects, building dynamic web apps and sleek user interfaces. I dream of starting my own tech startup one day, blending my love for coding with my entrepreneurial spirit. Goa's vibrant culture fuels my creativity and ambition. Let's connect and create something amazing together! 🚀
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="Exp" class="bg-light mt-5">
-        <div class="container-lg">
-            <div class="text-center">
-                <h2>Experience</h2>
-                <div class="card">
-                    <div class="card-body">
-                        No <b>Experience</b> at present, would love to work with you!
+    <!-- About Section -->
+    <section class="section-padding bg-light" id="about">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="display-6 fw-bold mb-4">About Me</h2>
+                    <p class="lead mb-4">
+                        As a student at Goa College of Engineering, I'm passionate about creating innovative web solutions using modern technologies. I specialize in the MERN stack and cloud computing, constantly pushing the boundaries of what's possible in web development.
+                    </p>
+                    <div class="row g-4 mt-4">
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <i class="bi bi-code-slash fs-2 text-primary mb-3"></i>
+                                    <h3 class="h5">Development</h3>
+                                    <p>Full-stack development with modern technologies</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <i class="bi bi-cloud fs-2 text-primary mb-3"></i>
+                                    <h3 class="h5">Cloud Computing</h3>
+                                    <p>Experience with cloud platforms and services</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card h-100 border-0 shadow-sm">
+                                <div class="card-body">
+                                    <i class="bi bi-lightbulb fs-2 text-primary mb-3"></i>
+                                    <h3 class="h5">Innovation</h3>
+                                    <p>Creative solutions to complex problems</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects -->
-    <section id="Projects" class="bg-light mt-5">
-        <div class="container-lg">
-            <div class="text-center">
-                <h2>Projects</h2>
-                <p class="lead text-muted">Explore my projects, where I've brought ideas to life using the MERN stack, cloud computing, and more. Each project showcases my passion for development and problem-solving.</p>
-            </div>
-        </div>
-        <div class="row my-5 align-items-center justify-content-center g-3">
-            <div class="col-lg-4 col-xl-3" style="width: 18rem;">
-                <div class="card border-2 border-primary">
-                    <div class="card-body text-center py-4">
-                        <h4 class="card-title">Project:1</h4>
-                        <p class="lead subtitle">Tribute Page</p>
-                        <img src="Project1.jpg" class="card-img-top" alt="Tribute Page">
-                        <p class="card-text mx-5 text-muted d-none d-lg-block">Made using basic HTML and CSS</p>
-                        <a href="https://steve-jobs-tribute.vercel.app/" class="btn btn-outline-primary btn-lg mt-3">Visit</a>
-                        <a href="https://github.com/jjf2009/Steve_Jobs_Tribute" class="btn btn-outline-primary btn-lg mt-3">Github</a>
+    <!-- Skills Section -->
+    <section class="section-padding" id="skills">
+        <div class="container">
+            <h2 class="display-6 fw-bold text-center mb-5" data-aos="fade-up">Skills & Technologies</h2>
+            <div class="row g-4">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h3 class="h4 mb-4">Frontend Development</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="skill-badge middle-out">React.js</span>
+                        <span class="skill-badge middle-out">JavaScript</span>
+                        <span class="skill-badge middle-out">HTML5</span>
+                        <span class="skill-badge middle-out">CSS3</span>
+                        <span class="skill-badge middle-out">Bootstrap</span>
+                        <span class="skill-badge middle-out">Tailwind CSS</span>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-xl-3" style="width: 18rem;">
-                <div class="card border-2 border-primary">
-                    <div class="card-body text-center py-4">
-                        <h4 class="card-title">Project:2</h4>
-                        <p class="lead subtitle">Palindrome Checker</p>
-                        <img src="Project2.jpg" class="card-img-top" alt="Form">
-                        <p class="card-text mx-5 text-muted d-none d-lg-block">Made Using Javascript</p>
-                        <a href="https://palindrome-checker-chi.vercel.app/" class="btn btn-outline-primary btn-lg mt-3">Visit</a>
-                        <a href="https://github.com/jjf2009/Palindrome_Checker" class="btn btn-outline-primary btn-lg mt-3">Github</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-xl-3" style="width: 18rem;">
-                <div class="card border-2 border-primary">
-                    <div class="card-body text-center py-4">
-                        <h4 class="card-title">Project:3</h4>
-                        <p class="lead subtitle">Roman Numeral Converter</p>
-                        <img src="Project3.jpg" class="card-img-top" alt="Number" style="width: 15rem;">
-                        <p class="card-text mx-5 text-muted d-none d-lg-block">Made Usign Javascript</p>
-                        <a href="https://roman-number-converter-delta.vercel.app/" class="btn btn-outline-primary btn-lg mt-3">Visit</a>
-                        <a href="https://github.com/jjf2009/Roman_Number_Converter-" class="btn btn-outline-primary btn-lg mt-3" target="_blank">Github</a>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h3 class="h4 mb-4">Backend Development</h3>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="skill-badge middle-out">Node.js</span>
+                        <span class="skill-badge middle-out">Express.js</span>
+                        <span class="skill-badge middle-out">MongoDB</span>
+                        <span class="skill-badge middle-out">RESTful APIs</span>
+                        <span class="skill-badge middle-out">AWS</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="Contact">
-            <div class="text-center">
-                <h2>Contact</h2>
-                <div class="container p-4 pb-0">
-                    <section class="mb-4">
-                        <a class="btn" href="https://x.com/JF2009_official" role="button"><i class="bi bi-twitter-x"></i></a>
-                        <a class="btn" href="#!" role="button"><i class="bi bi-envelope-fill"></i></a>
-                        <a class="btn" href="https://www.linkedin.com/in/jared-furtado/" role="button"><i class="bi bi-linkedin"></i></a>
-                        <a class="btn" href="https://github.com/jjf2009" role="button"><i class="bi bi-github"></i></a>
-                    </section>
+    <!-- Projects Section -->
+    <section class="section-padding bg-light" id="projects">
+        <div class="container">
+            <h2 class="display-6 fw-bold text-center mb-5" data-aos="fade-up">Featured Projects</h2>
+            <div class="row g-4 " id="pro">
+                    </div>
                 </div>
             </div>
+        </div>
     </section>
 
-    <script>
-        var i = 0;
-        var j = 0;
-        var txt = ['Developer 💻', 'Freelancer 🌟', 'Innovator 🚀', 'MERN Stack Enthusiast ⚛️', 'Cloud Explorer ☁️', 'Tech Lover 💡', 'Future Entrepreneur 💼', 'Goa-Based 🌴', 'Problem Solver 🔧', 'Startup Dreamer 🌟']; 
-        var speed = 100; // Speed for typing effect
+    <!-- Contact Section -->
+    <section class="contact-section-padding" id="contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="display-6 fw-bold mb-4">Get In Touch</h2>
+                    <p class="lead mb-5">Have a project in mind? Let's work together to bring your ideas to life.</p>
+                    <div class="social-links mb-5">
+                        <a href="https://github.com/jjf2009" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/jared-furtado/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="https://x.com/JF2009_official" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                        <a href="mailto:your.email@example.com"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        function typeWriter() {
-            if (i < txt[j].length) {
-                document.getElementById("demo").innerHTML += txt[j].charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            } else {
-                setTimeout(eraseText, 1000); // Delay before erasing text
-            }
-        }
+    <!-- Footer -->
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2024 Jared Furtado. All rights reserved.</p>
+        </div>
+    </footer>
 
-        function eraseText() {
-            if (i >= 0) {
-                var currentText = txt[j].substring(0, i);
-                document.getElementById("demo").innerHTML = currentText;
-                i--;
-                setTimeout(eraseText, speed);
-            } else {
-                j = (j + 1) % txt.length; // Move to the next text in array
-                setTimeout(typeWriter, 100); // Delay before typing next text
-            }
-        }
-
-        // Initialize typing effect
-        setTimeout(typeWriter, 100);
-    </script>
-
-    <!-- Bootstrap JS and dependencies -->
+    <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Initialize Typed.js
+        new Typed('#typed-text', {
+            strings: [
+                'Full Stack Developer',
+                'MERN Stack Developer',
+                'Cloud Computing Enthusiast',
+                'Problem Solver',
+                'Future Entrepreneur'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            loop: true
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        const checkbox = document.getElementById("checkbox")
+        checkbox.addEventListener("change", () => {
+        document.body.classList.toggle("dark")
+         })
+</script>
+    </script>
 </body>
 </html>
