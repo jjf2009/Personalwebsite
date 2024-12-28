@@ -71,7 +71,7 @@ const projectsContainer = document.getElementById('pro');
         const projectHTML = `
             <div class="col-md-4" data-aos="fade-up">
                 <div class="project-card card h-100 cbp-item">
-                    <img src="${project.image}" class="card-img-top" alt="${project.title}">
+                    <img src={"${project.image}"} class="card-img-top" alt="${project.title}">
                     <div class="card-body">
                         <h3 class="h5 card-title">${project.title}</h3>
                         <p class="card-text">${project.description}</p>
