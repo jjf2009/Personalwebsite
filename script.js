@@ -2,21 +2,21 @@ const projects = [
     {
         title: "Steve Jobs Tribute",
         description: "A tribute page dedicated to Steve Jobs, showcasing responsive design and modern web principles.",
-        image: "/images/01-Tribute.png",
+        image: "./images/01-Tribute.png",
         web: "https://steve-jobs-tribute.vercel.app/",
         git: "https://github.com/jjf2009/Steve_Jobs_Tribute"
     },
     {
         title: "Pokedex",
         description: "An interactive Pokedex application built to showcase Pokemon data with responsive design.",
-        image: "/images/02.png",
+        image: "./images/02.png",
         web: "https://pokedex-rho-lake.vercel.app/",
         git: "https://github.com/jjf2009/PokemonSearchApp"
     },
     {
         title: "Connect 4",
         description: "A fun Connect 4 game implemented with engaging UI and responsive design.",
-        image: "/images/03.png",
+        image: "./images/03.png",
         web: "https://connet-4.vercel.app/",
         git: "https://github.com/jjf2009/Connet-4"
     },
