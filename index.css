@@ -18,6 +18,7 @@ body {
 
 .hero-section {
     min-height: 100vh;
+    min-width: 100vw;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     display: flex;
     align-items: center;
@@ -87,6 +88,7 @@ body {
     transition: var(--transition);
     position: relative; /* Necessary for pseudo-elements to align correctly */
     z-index: 1;
+    min-width: 100vw;
 }
 
  .skill-badge:hover {
@@ -150,9 +152,11 @@ body {
 
 .section-padding {
     padding: 6rem 0;
+    min-width: 100vw;
 }
 .contact-section-padding{
     padding: 6rem 0 0 0;
+    min-width: 100vw;
 }
 .timeline {
     border-left: 2px solid var(--primary-color);
