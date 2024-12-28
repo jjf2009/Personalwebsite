@@ -22,6 +22,9 @@ body {
     display: flex;
     align-items: center;
 }
+@media only screen and (max-width: 600px) {
+    
+  }
 
 .skill-badge {
     background: var(--secondary-color);
