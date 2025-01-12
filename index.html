@@ -39,11 +39,10 @@
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <!-- <li class="nav-item ms-lg-3">
-                        <a class="btn ">
-                            <i class="fas fa-sun icon"></i>
-                        </a>
-                    </li> -->
+                    <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+                    <!-- <button id="theme-toggle" class="theme-btn">
+                        <i class="fa fa-moon"></i>
+                    </button> -->
                     <li class="nav-item ms-lg-3">
                         <a class="btn btn-primary rounded-pill px-4" href="./Resume.pdf" download="Jared_Furtado_Resume">Resume</a>
                     </li>
@@ -125,7 +124,6 @@
             <h2 class="display-6 fw-bold text-center mb-5" data-aos="fade-up">Skills & Technologies</h2>
             <div class="row g-4">
                 <div class="col-md-6" data-aos="fade-right">
-                    <h3 class="h4 mb-4">Frontend Development</h3>
                     <div class="d-flex flex-wrap gap-2">
                         <span class="skill-badge middle-out">React.js</span>
                         <span class="skill-badge middle-out">JavaScript</span>
@@ -136,24 +134,56 @@
                     </div>
                 </div>
                 <div class="col-md-6" data-aos="fade-left">
-                    <h3 class="h4 mb-4">Backend Development</h3>
                     <div class="d-flex flex-wrap gap-2">
                         <span class="skill-badge middle-out">Node.js</span>
                         <span class="skill-badge middle-out">Express.js</span>
                         <span class="skill-badge middle-out">MongoDB</span>
                         <span class="skill-badge middle-out">RESTful APIs</span>
                         <span class="skill-badge middle-out">AWS</span>
+                        <span class="skill-badge middle-out">OpenCV</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Projects Section -->
-    <section class="section-padding bg-light" id="projects">
+    <!-- Experince  Section -->
+    <section id="experience" class="section-padding">
         <div class="container">
-            <h2 class="display-6 fw-bold text-center mb-5" data-aos="fade-up">Featured Projects</h2>
-            <div class="row g-4 " id="pro">
+            <h2 class="display-6 fw-bold mb-4">Work Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Open Source Contributor</h3>
+                    <p>GirlScript Foundation (Sep 2024 - Oct 2024)</p>
+                    <ul>
+                        <li>Contributed to open-source projects under the GSSoC initiative.</li>
+                        <li>Implemented 13 merged pull requests across various repositories.</li>
+                        <li>Learned API integration and global collaboration.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Campus Ambassador</h3>
+                    <p>Multiple Events (Dec 2024 - Present)</p>
+                    <ul>
+                        <li>Represented BITSMUN Goa, Chaos IIMA, and Plinth LNMIIT.</li>
+                        <li>Focused on increase participation, brand promotion, and event communication.</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <h3>Student Intern</h3>
+                    <p>Innomatics Research Labs (Sep 2024 - Nov 2024)</p>
+                    <ul>
+                        <li>Worked as a Web Developer.</li>
+                        <li>Enhanced problem-solving skills and built scalable applications.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects Section -->
+    <section class="section-padding " id="projects">
+        <div class="container">
+            <h2 class="display-6 fw-bold text-center mb-5 " data-aos="fade-up">Featured Projects</h2>
+            <div class="row g-4  " id="pro">
                     </div>
                 </div>
             </div>
@@ -170,7 +200,9 @@
                     <div class="social-links mb-5">
                         <a href="https://github.com/jjf2009" target="_blank"><i class="bi bi-github"></i></a>
                         <a href="https://www.linkedin.com/in/jared-furtado/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="discordapp.com/users/1026873193723600936" target="_blank"><i class="bi bi-discord"></i></a>
                         <a href="https://x.com/JF2009_official" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.instagram.com/jaredf.official/" target="_blank"><i class="bi bi-instagram"></i></a>
                         <a href="mailto:jaredfurtadowork@gmail.com"><i class="bi bi-envelope-fill"></i></a>
                     </div>
                 </div>
@@ -218,12 +250,25 @@
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
-            });
-        });
-        const checkbox = document.getElementById("checkbox")
-        checkbox.addEventListener("change", () => {
-        document.body.classList.toggle("dark")
-         })
+            })})
+         
+    //  Dark/Light Mode Toggle
+      const themeToggle = document.getElementById("theme-toggle");
+      const body = document.body;
+
+        themeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark");
+        const icon = themeToggle.querySelector(".fa");
+        if (body.classList.contains("dark")) {
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-sun");
+        } else {
+            icon.classList.remove("fa-sun");
+            icon.classList.add("fa-moon");
+        }
+    });
+</script>
+
 </script>
     </script>
 </body>

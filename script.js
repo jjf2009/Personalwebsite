@@ -1,5 +1,12 @@
 const projects = [
     {
+    title: "Open-CV Projects ",
+    description: "OpenCV Projects Build to ",
+    image: "./images/01-Tribute.png",
+    web: "https://github.com/jjf2009?tab=repositories",
+    git: "https://github.com/jjf2009/OpenCV_Projects"
+   },
+    {
         title: "Steve Jobs Tribute",
         description: "A tribute page dedicated to Steve Jobs, showcasing responsive design and modern web principles.",
         image: "./images/01-Tribute.png",
@@ -70,11 +77,11 @@ const projectsContainer = document.getElementById('pro');
     projects.forEach(project => {
         const projectHTML = `
             <div class="col-md-4" data-aos="fade-up">
-                <div class="project-card card h-100 cbp-item">
+                <div class="project-card card h-100 cbp-item bg-light">
                     <div class="card-body">
                         <h3 class="h5 card-title">${project.title}</h3>
                         <p class="card-text">${project.description}</p>
-                        <div class="d-flex gap-2">
+                        <div class="d-flex gap-2 ">
                             <a href="${project.web}" class="btn btn-primary btn-sm" target="_blank">Live Demo</a>
                             <a href="${project.git}" class="btn btn-outline-primary btn-sm" target="_blank">Source Code</a>
                         </div>
