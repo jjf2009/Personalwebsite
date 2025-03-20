@@ -1,5 +1,12 @@
 const projects = [
     {
+    title: "Ride Buddy ",
+    description: "Carpooling Website for GEC Students",
+    image: "./Images/Ridebuddy.png",
+    web: "https://ridebuddy-8p6s.onrender.com/",
+    git: "https://github.com/jjf2009?tab=repositories"
+   },
+   {
     title: "Open-CV Projects ",
     description: "OpenCV Projects Using Mediapipe and YOLO",
     image: "./Images/opencv.jpg",
