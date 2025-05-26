@@ -57,8 +57,8 @@ export default function Header() {
           <div className="flex items-center space-x-2">
             <ModeToggle />
             <Button asChild size="sm">
-              <a href="/resume.pdf" download="Jared_Furtado_CV">
-                CV
+              <a href="/MY_CV.pdf" download="Jared_Furtado_CV">
+                MY CV
               </a>
             </Button>
           </div>
@@ -87,8 +87,8 @@ export default function Header() {
               </button>
             ))}
             <Button asChild size="sm" className="w-full">
-              <a href="/resume.pdf" download="Jared_Furtado_CV">
-                CV
+              <a href="/MY_CV.pdf" download="Jared_Furtado_CV">
+                MY CV
               </a>
             </Button>
           </nav>
