@@ -87,8 +87,8 @@ export default function Header() {
               </button>
             ))}
             <Button asChild size="sm" className="w-full">
-              <a href="/MY_CV.pdf" download="Jared_Furtado_CV">
-                MY CV
+              <a href="/Jared_Furtado_Resume.pdf" download="Jared_Furtado_Resume">
+                Resume
               </a>
             </Button>
           </nav>
